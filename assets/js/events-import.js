@@ -19,12 +19,11 @@ window.onload = function() {
   }
 
   function showInfo(data, tabletop) {
-    var tr;
+    var event_card="";
     for (var i = 0; i < data.length; i++) {
-      tr = $("<div class='event-card'>");
-      tr.append("<div class='event-card-image-container2' style=" + '"' + "background-image: url('"+ data[i].ImageLink + "');" + '"' + "></div><div class='event-card-content'><h2>"+ data[i].EventName + "</h2><p>" + data[i].EventDescription + "</p></div><div class='event-date-btn'> <span>"+ data[i].Date +"</span> <a class='event-btn' href='" + data[i].ButtonLink + "'>Learn More</a></div></div>");
-      $('.event-cards-container').append(tr);
+      event_card += "<div class='event-card filter-2020'><div class='event-card-image-container2' style=" + '"' + "background-image: url('" + data[i].ImageLink+ "');" + '"' +"><div id='image-overlay'> <a href='" + data[i].ImageLink + "' class='events-lightbox'><span id='event-img-btn'>Open</span> </a></div></div><div class='event-card-content'><h2>" + data[i].EventName + "</h2><p>" + data[i].EventDescription + "</p></div><div class='event-date-btn'><span> " + data[i].Date + " </span><a class='event-btn' href='" + data[i].ButtonLink + "'>Learn More</a></div></div></div>";
     }
-    console.log(data);
+    document.getElementById("event-cards-container").innerHTML = event_card;
+    const portfolioLightbox = GLightbox({selector: '.events-lightbox'});
+    //console.log(event_card);
   } 
-

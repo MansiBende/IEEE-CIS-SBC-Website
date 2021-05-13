@@ -67,15 +67,14 @@
 .event-date-btn span{
     color:#a19f9f;
     font-size: 15px;
-    transform: translateY(-200px);
 }
 
-.event-card-image-container img{
+/*.event-card-image-container img{
     width:100%;
     height: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-}
+}*/
 
 .event-date-btn a{
     background: #4154f1;
@@ -142,5 +141,66 @@
       opacity: 1;
     }
   }
+
+.event-card-image-container2:hover #image-overlay{
+    opacity: 1;
+  }
+
+#event-img-btn{
+    border: 2.5px solid #fff;
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    font-family:"Nunito";
+}
+
+#image-overlay{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.61);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition:all 0.2s ease-in-out 0s;
+  }
+
+
+  #events-filters {
+    padding: 0;
+    margin: 10px 0px 0px 0px;
+    list-style: none;
+    text-align: center;
+    background: white;
+    border-radius: 50px;
+    padding: 2px 15px;
+  }
   
+  #events-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    color: #444444;
+    margin: 0 4px 8px 4px;
+    transition: 0.3s;
+    border-radius: 50px;
+    border: 1px solid #fff;
+  }
   
+  #events-filters li:hover, #events-filters li.filter-active {
+    color: #4154f1;
+    border-color: #4154f1;
+  }
+  
+  #events-filters li:last-child {
+    margin-right: 0;
+  }
+  
+  .filter-buttons{
+      width: 100%;
+  }
