@@ -621,7 +621,7 @@ section {
 
 .counts .count-box span {
   font-size: 36px;
-  display: block;
+  display:inline;
   font-weight: 600;
   color: #0b198f;
 }
