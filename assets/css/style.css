@@ -1636,6 +1636,11 @@ section {
   font-weight: 600;
 }
 
+.contact .php-email-form .success{
+  display: block;
+}
+
+
 .contact .php-email-form .loading {
   display: none;
   background: #fff;

@@ -110,7 +110,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="https://formcarry.com/s/XnSnmgAFtjT" method="post" class="php-email-form" accept-charset="UTF-8">
+            <form id="php-email-form" class="php-email-form" accept-charset="UTF-8">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -128,13 +128,13 @@
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                 </div>
-
+                <input type="hidden" name="_redirect"value="http://localhost:5501/contact/"/>
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div id="sent" class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button class="contact-us-btn" type="submit">Send Message</button>
                 </div>
 
               </div>
@@ -242,6 +242,7 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/contact.js"></script>
 
 </body>
 
