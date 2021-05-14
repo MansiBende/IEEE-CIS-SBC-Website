@@ -2257,6 +2257,7 @@ section {
   border: 0;
   padding: 8px;
   width: calc(100% - 140px);
+  outline:none;
 }
 
 .footer .footer-newsletter form input[type="submit"] {
