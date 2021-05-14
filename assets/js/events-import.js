@@ -60,6 +60,6 @@ window.onload = function() {
       console.log(data[i].ButtonLink)
     }
     document.getElementById("event-cards-container").innerHTML = event_card;
-    const portfolioLightbox = GLightbox({selector: '.events-lightbox'});
+    const event_lightbox = GLightbox({selector: '.events-lightbox'});
     //console.log(event_card);
   } 
