@@ -29,7 +29,7 @@
       select(el, all).addEventListener(type, listener)
     }
   }
-
+  
   /**
    * Easy on scroll event listener 
    */
@@ -77,7 +77,7 @@
 
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
-   */
+   *//*
   let selectHeader = select('#header')
   if (selectHeader) {
     const headerScrolled = () => {
@@ -89,7 +89,8 @@
     }
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
-  }
+  }*/
+  
 
   /**
    * Back to top button
