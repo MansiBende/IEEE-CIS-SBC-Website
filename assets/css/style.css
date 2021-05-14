@@ -82,7 +82,7 @@ section {
 
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 57px;
+    margin-top: 85px;
   }
 }
 
@@ -612,6 +612,17 @@ section {
   width: 100%;
   background: #fff;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  transition: 0.2s;
+}
+
+.counts .count-box:hover{
+  background:#012970;
+  color:#fff;
+  transform: 0.2s;
+}
+
+.counts .count-box:hover span{
+  color:#fff;
 }
 
 .counts .count-box i {
@@ -619,6 +630,10 @@ section {
   line-height: 0;
   margin-right: 20px;
   color: #4154f1;
+}
+
+.counts .count-box:hover i{
+  color: #64d3ff!important;
 }
 
 .counts .count-box span {
@@ -632,7 +647,13 @@ section {
   padding: 0;
   margin: 0;
   font-family: "Nunito", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
+}
+
+@media (max-width:992px) {
+  .counts .count-box p{
+    font-size:15px;
+  }  
 }
 
 /*--------------------------------------------------------------
@@ -2278,6 +2299,7 @@ section {
 
 .footer .footer-newsletter form input[type="submit"]:hover {
   background: #5969f3;
+  outline: none;
 }
 
 .footer .footer-top {
