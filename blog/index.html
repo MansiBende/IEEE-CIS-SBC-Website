@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Blog - IEEE CIS SBC - GHRCE(62361B)</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.2.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="../" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <span></span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../events/">Events</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../team/">Team</a></li>
+          <li><a href="../research/">Research</a></li>
+          <li><a href="../contact/">Contact Us</a></li>
+          <li><a class="getstarted" href="../join/">Become a member</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="../">Home</a></li>
+          <li>Blog</li>
+        </ol>
+        <h2>Blog</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog" style="width:100%;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry entry-single">
+
+              <div class="entry-img">
+                <img src="../assets/img/blog/Tkinter.jpg" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="#">Tkinter - Layout Managers</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Om Jaiswal</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2021-02-01">Feb 1, 2021</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">8 Comments</a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p style="text-align: justify;">
+                  GUI (Graphical User Interface) is the common User Interface which is a visual representation of communication for the easy interaction between the machine and user. 
+                  It includes buttons and icons for Graphical representation, and rather than the usual text-based or command-based communication it can be performed by interacting with these icons. 
+                  Each and every GUI has its own features and functions.
+                </p>
+
+                <p style="text-align: justify;">
+                  Even without any prior computer knowledge one can perform the basic functions of a computer. 
+                  Surprisingly, even for such a simple task GUI is responsible. 
+                  GUI provides a visual representation of files present and provides details about it which makes searching very easy. 
+                  Every response from the computer is visually communicated through GUI.
+                </p>
+
+                <p style="text-align: justify;">
+                  When designing the GUI of an application, it is important to decide what type of widgets are going to be used and how to organize those widgets in the application by using the specialized non-visible objects called layout managers in the Tkinter module.
+                </p>
+
+                <p style="text-align: justify;">
+                  Tkinter has three built-in layout managers:
+                </p>
+                
+                <h3><strong>Pack:</strong></h3>
+                <p style="text-align: justify;">
+                  The pack geometry manager organizes widgets in horizontal and vertical boxes.
+                </p>
+
+                <blockquote>
+                  <pre style="text-align: left;">
+<strong>Code:</strong>
+
+  # importing Tkinter module
+  from tkinter import *
+  
+  # creating window object
+  window = Tk()
+
+  window.title("My First GUI Program")   # window title
+  window.minsize(width=300, height=300)  # window size
+
+  # creating Entry
+  my_label = Label(text="I am a label", font=("Arial", 24, "bold"))
+  my_label.pack()
+
+  # creating Entry
+  input = Entry(width=30)
+  input.pack()
+
+  # creating Button
+  button = Button(text="Click Me")
+  button.pack()
+
+  window.mainloop()  
+  
+  <strong>Output:</strong>
+                  </pre>
+
+                  <img src="../assets/img/blog/Label.png" class="center" alt="" style="height: 250px; width: 250px;">
+
+                </blockquote>
+
+                <h3><strong>Place:</strong></h3>
+                <p style="text-align: justify;">
+                  The place geometry manager positions widgets using absolute positioning.
+                </p>
+
+                <blockquote>
+                  <pre style="text-align: left;">
+<strong>Code:</strong>
+
+  # importing Tkinter module
+  from tkinter import *
+
+  # creating window object
+  window = Tk()
+
+  window.title("My First GUI Program")   # window title
+  window.minsize(width=300, height=300)  # window size
+
+  # creating Label
+  my_label = Label(text="I am a label", font=("Arial", 24, "bold"))
+  my_label.place(x=0, y=0)               # position of Label
+
+  # creating Entry
+  input = Entry(width=30)
+  input.place(x=100, y=100)              # position of Entry
+
+  # creating Button
+  button = Button(text="Click Me")
+  button.place(x=200, y=200)             # position of Button
+
+  window.mainloop()
+  
+  <strong>Output:</strong>
+                  </pre>
+
+                  <img src="../assets/img/blog/Label2.png" class="center" alt="" style="height: 250px; width: 250px;">
+
+                </blockquote>
+                
+                <h3><strong>Grid:</strong></h3>
+                <p style="text-align: justify;">
+                  The grid geometry manager places widgets in a two dimensional grid.
+                </p>
+
+                <blockquote>
+                  <pre style="text-align: left;">
+<strong>Code:</strong>
+
+  # importing Tkinter module
+  from tkinter import *
+
+  # creating window object
+  window = Tk()
+
+  window.title("My First GUI Program")   # window title
+  window.minsize(width=300, height=300)  # window size
+
+  # creating Label
+  my_label = Label(text="I am a label", font=("Arial", 24, "bold"))
+  my_label.grid(column=0, row=0)         # position of Label
+
+  # creating Entry
+  input = Entry(width=30)
+  input.grid(column=1, row=1)            # position of Entry
+
+  # creating Button
+  button = Button(text="Click Me")
+  button.grid(column=1, row=2)           # position of Button
+
+  window.mainloop()
+  
+  <strong>Output:</strong>
+                  </pre>
+
+                  <img src="../assets/img/blog/Label3.png" class="center" alt="" style="height: 250px; width: 250px;">
+
+                </blockquote>
+
+                <p>
+                  Among all these built-in layout managers, I prefer the Grid because it makes designing and collaborating the design with other designers easier as they provide a plan for where to place elements.
+                </p>
+
+                <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
+
+              </div>
+
+            </article><!-- End blog entry -->
+
+            <div class="blog-author d-flex align-items-center">
+              <img src="../assets/img/blog/Om.png" class="rounded-circle float-left" alt="">
+              <div>
+                <h4>Om Jaiswal</h4>
+                <div class="social-links">
+                  <a href="https://www.linkedin.com/in/om-jaiswal-a599b61b3"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.instagram.com/om_jaiswal7/"><i class="biu bi-instagram"></i></a>
+                </div>
+                <p>
+                  Executive Committee Member at IEEE CIS SBC - GHRCE(62361B)
+                </p>
+              </div>
+            </div><!-- End blog author bio -->
+
+            <div class="blog-comments">
+
+              <h4 class="comments-count">8 Comments</h4>
+
+              <div id="comment-1" class="comment">
+                <div class="d-flex">
+                  <div class="comment-img"><img src="../assets/img/blog/User.png" alt=""></div>
+                  <div>
+                    <h5><a href="">Sajid Hussain</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <time datetime="2021-02-02">02 Feb, 2021</time>
+                    <p>
+                      Simple, clean and elegant with a proper and sound introduction.
+                    </p>
+                  </div>
+                </div>
+
+                <div id="comment-reply-1" class="comment comment-reply">
+                  <div class="d-flex">
+                    <div class="comment-img"><img src="../assets/img/blog/Om.png" alt=""></div>
+                    <div>
+                      <h5><a href="">Om Jaiswal</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                      <time datetime="2020-02-02">02 Feb, 2021</time>
+                      <p>
+                        Thank you, it is really great to hear that.
+                      </p>
+                    </div>
+                  </div>
+
+                </div><!-- End comment reply #1-->
+
+              </div><!-- End comment #1 -->
+
+              <div id="comment-2" class="comment">
+                <div class="d-flex">
+                  <div class="comment-img"><img src="../assets/img/blog/User.png" alt=""></div>
+                  <div>
+                    <h5><a href="">Shantanu Lokhande</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <time datetime="2021-02-02">02 Feb, 2021</time>
+                    <p>
+                      Written with proper formatting and ample examples. Loved it!
+                    </p>
+                  </div>
+                </div>
+
+                <div id="comment-reply-1" class="comment comment-reply">
+                  <div class="d-flex">
+                    <div class="comment-img"><img src="../assets/img/blog/Om.png" alt=""></div>
+                    <div>
+                      <h5><a href="">Om Jaiswal</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                      <time datetime="2020-02-02">02 Feb, 2021</time>
+                      <p>
+                        Thank you, for your kind words.
+                      </p>
+                    </div>
+                  </div>
+
+                </div><!-- End comment reply #1-->
+
+              </div><!-- End comment #2-->
+
+              <div id="comment-3" class="comment">
+                <div class="d-flex">
+                  <div class="comment-img"><img src="../assets/img/blog/User.png" alt=""></div>
+                  <div>
+                    <h5><a href="">Parag Asare</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <time datetime="2021-02-03">03 Feb, 2021</time>
+                    <p>
+                      Content could have been better and more that it is, but still great work.
+                    </p>
+                  </div>
+                </div>
+
+                <div id="comment-reply-1" class="comment comment-reply">
+                  <div class="d-flex">
+                    <div class="comment-img"><img src="../assets/img/blog/Om.png" alt=""></div>
+                    <div>
+                      <h5><a href="">Om Jaiswal</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                      <time datetime="2020-02-03">03 Feb, 2021</time>
+                      <p>
+                        I value and respect your opinion, thank you for sharing and I will work on it.
+                      </p>
+                    </div>
+                  </div>
+
+                </div><!-- End comment reply #1-->
+
+              </div>
+
+              <div id="comment-3" class="comment">
+                <div class="d-flex">
+                  <div class="comment-img"><img src="../assets/img/blog/User.png" alt=""></div>
+                  <div>
+                    <h5><a href="">Rishank Tambe</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <time datetime="2021-02-04">04 Feb, 2021</time>
+                    <p>
+                      I was looking to read something about this for a long time. Thank you !
+                    </p>
+                  </div>
+                </div>
+
+                <div id="comment-reply-1" class="comment comment-reply">
+                  <div class="d-flex">
+                    <div class="comment-img"><img src="../assets/img/blog/Om.png" alt=""></div>
+                    <div>
+                      <h5><a href="">Om Jaiswal</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                      <time datetime="2020-02-04">04 Feb, 2021</time>
+                      <p>
+                        Thank you, I am happy to hear you feel that way!
+                      </p>
+                    </div>
+                  </div>
+
+                </div><!-- End comment reply #1-->
+
+              </div><!-- End comment #3 -->
+
+              <div class="reply-form">
+                <h4>Leave a Reply</h4>
+                <p>Your email address will not be published. Required fields are marked * </p>
+                <form action="">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input name="name" type="text" class="form-control" placeholder="Your Name*" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input name="email" type="text" class="form-control" placeholder="Your Email*" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col form-group">
+                      <input name="website" type="text" class="form-control" placeholder="Your Website">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col form-group">
+                      <textarea name="comment" class="form-control" placeholder="Your Comment*" required></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Post Comment</button>
+
+                </form>
+
+              </div>
+
+            </div><!-- End blog comments -->
+
+          </div><!-- End blog entries list -->
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+
+              <h3 class="sidebar-title">Search</h3>
+              <div class="sidebar-item search-form">
+                <form action="">
+                  <input type="text">
+                  <button type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div><!-- End sidebar search formn-->
+
+              <h3 class="sidebar-title">Category</h3>
+              <div class="sidebar-item categories">
+                <ul>
+                  <li><a href="#">Technology</a></li>
+                </ul>
+              </div><!-- End sidebar categories-->
+
+              <h3 class="sidebar-title">Recent Comments</h3>
+              <div class="sidebar-item recent-posts">
+                <div class="post-item clearfix">
+                  <img src="../assets/img/blog/User.png" alt="">
+                  <h4 style="text-align: Justify;"><a href="#">Simple, clean and elegant with a proper and sound introduction.</a></h4>
+                  <time datetime="2021-02-02">Feb 2, 2021</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="../assets/img/blog/User.png" alt="">
+                  <h4 style="text-align: Justify;"><a href="#">Written with proper formatting and ample examples. Loved it!</a></h4>
+                  <time datetime="2021-02-02">Feb 2, 2021</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="../assets/img/blog/User.png" alt="">
+                  <h4 style="text-align: Justify;"><a href="#">Content could have been better and more that it is, but still great work.</a></h4>
+                  <time datetime="2021-02-03">Feb 3, 2021</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="../assets/img/blog/User.png" alt="">
+                  <h4 style="text-align: Justify;"><a href="#">I was looking to read something about this for a long time. Thank you!</a></h4>
+                  <time datetime="2021-02-04">Feb 4, 2021</time>
+                </div>
+
+              </div><!-- End sidebar recent posts-->
+
+              <h3 class="sidebar-title">Tags</h3>
+              <div class="sidebar-item tags">
+                <ul>
+                  <li><a href="#">Python</a></li>
+                  <li><a href="#">GUI</a></li>
+                  <li><a href="#">Tkinter</a></li>
+                </ul>
+              </div><!-- End sidebar tags-->
+
+            </div><!-- End sidebar -->
+
+          </div><!-- End blog sidebar -->
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+            <p>Email address<emp style="color:red;">*</emp></p>
+          </div>
+          <div class="col-lg-6">
+            <form action="https://submit-form.com/1K6gjRqM" method="post">
+              <input type="email" name="email" required>
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-12 footer-info">
+            <a href="../" class="logo d-flex align-items-center">
+              <img src="../assets/img/logo.png" alt="">
+              <span></span>
+            </a>
+            <p>The IEEE Computational Intelligence Society is a professional society of the Institute of Electrical and Electronics Engineers (IEEE).</p>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/ieee_cis_ghrce" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://m.facebook.com/profile.php?id=100291181648165&ref=content_filter" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/ieee_cis_ghrce/?igshid=1dos1x0661571" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/ieee-cis-student-chapter-ghrce/" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+              <a href="https://github.com/IEEE-CIS-GHRCE-62361B/Team-2020" class="github"><i class="bi bi-github bx bxl-github"></i></a>
+              <a href="https://www.youtube.com/channel/UCJy2LiaHtIyTf48XwYXPd_g" class="youtube"><i class="bi bi-youtube bx bxl-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="../">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../events/">Events</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../about/">About</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../team/">Team</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../research/">Research</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="../contact/">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              The Office of IEEE CIS SB Chapter,<br>
+              G H Raisoni College of Engineering,<br> 
+              Nagpur – 440016<br><br>
+              <strong>Email:</strong> sbc-ghrce-cis@ieee.org<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/contact.js"></script>
+
+</body>
+
+</html>
