@@ -22,10 +22,6 @@ window.onload = function() {
     var event_card="";
     for (var i = 0; i < data.length; i++) {
       event_card += "<div class='event-card filter-2020'><div class='event-card-image-container2' style=" + '"' + "background-image: url('" + data[i].ImageLink+ "');" + '"' +"><div id='image-overlay'> <a href='" + data[i].ImageLink + "' class='events-lightbox' data-gallery='gallery" + data[i].SrNo + "' data-title='" + data[i].EventName + "'><span id='event-img-btn'>Open</span> </a></div></div><div class='event-card-content'><h2>" + data[i].EventName + "</h2><p>" + data[i].EventDescription + "</p></div><div class='event-date-btn'><span> " + data[i].Date + " </span>";
-      /*for (var j=0; j< data[i].ImagesCount;j++){
-        event_card +="<a href='" + data[i].Image_1 + "'class='events-lightbox' data-gallery='gallery" + data[i].SrNo + "'>";
-        //console.log(data[i].Image_.concat(j));
-      }*/
       if(data[i].Image_2!=''){
         event_card +="<a href='" + data[i].Image_2 + "' class='events-lightbox' data-gallery='gallery" + data[i].SrNo + "' data-title='" + data[i].EventName + "' >";
       }
