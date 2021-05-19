@@ -1,8 +1,8 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     setTimeout(function() {
         $('#loading').fadeOut();
     }, 1000);
-});
+});*/
 
 window.onload = function() {
     init()
@@ -16,6 +16,10 @@ window.onload = function() {
       callback: showInfo,
       simpleSheet: true
     })
+  }
+
+  function hidePreloader(){
+      document.getElementById("loading").style.display = "none";
   }
 
   function showInfo(data, tabletop) {
@@ -53,9 +57,10 @@ window.onload = function() {
       event_card += "<a class='event-btn' href='" + data[i].ButtonLink + "' target='_blank'>Learn More</a>";
       }
       event_card += "</div></div></div>";
-      console.log(data[i].ButtonLink)
     }
+    hidePreloader();
     document.getElementById("event-cards-container").innerHTML = event_card;
+    document.getElementById("event-cards-container").classList.add("fade-in-bottom");
     const event_lightbox = GLightbox({selector: '.events-lightbox'});
     //console.log(event_card);
   } 

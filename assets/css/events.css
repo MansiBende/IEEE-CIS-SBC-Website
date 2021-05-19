@@ -1,3 +1,7 @@
+.master-events-container{
+  min-height: 110vh;
+}
+
 .event-cards-container{
     width: auto;
     margin: auto;
@@ -5,6 +9,7 @@
     flex-wrap:wrap;
     justify-content:space-evenly;
     min-height: 100vh;
+    display: none;
 }
 .event-card{
     height: auto;
@@ -33,7 +38,7 @@
         height: 140px!important;
     }
     .event-card-image-container2{
-        height: auto;
+        height: 300px!important;
     } 
 }
 
@@ -49,7 +54,7 @@
 
 .event-card-image-container2{
     width: auto;
-    height: 390px;
+    height: 350px;
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center;
@@ -97,24 +102,44 @@
     text-align: justify;
 }
 
-#loading {
-    font-size: 50px;
-    width: 300px;
-    text-align: center;
-    margin: auto;
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-family: 'Poppins';
-    color: #061058;
-    font-weight: 600;
+    top:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
   }
 
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 8px solid rgb(180, 17, 17);
+    border-color: #012970 transparent #012970 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+
 .fade-in-bottom {
-	-webkit-animation: fade-in-bottom 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
-	        animation: fade-in-bottom 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+  display: flex;
+	-webkit-animation: fade-in-bottom 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.0s both;
+	        animation: fade-in-bottom 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.0s both;
 }
 
 @-webkit-keyframes fade-in-bottom {
