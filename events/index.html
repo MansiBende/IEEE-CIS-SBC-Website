@@ -87,11 +87,23 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
+    
+
+    <div id="filters" class="button-group">  
+      <button id="default" class="button active" onclick="filterSelection('all')">All</button>
+      <button class="button" onclick="filterSelection('2020')">2020</button>
+      <button class="button" onclick="filterSelection('2021')">2021</button>
+      <input type="text" id="event-search-input" onkeyup="Search_Event()" placeholder="Search for an event">
+    </div>
+
+    
     <!--loader-->
     <!--<div id="loading"><span>Loading...</span></div>-->
     <div id="loading" class="lds-dual-ring"></div>
     <div class="master-events-container">
     <div id="event-cards-container" class="event-cards-container">
+
+    
       <!--<div class="event-card">
           <div class="event-card-image-container">
              <img src="https://lumiere-a.akamaihd.net/v1/images/sa_pixar_virtualbg_coco_16x9_9ccd7110.jpeg"></img>     
@@ -105,7 +117,6 @@
               <a class="event-btn" href="">Learn More</a>
           </div>
         </div> -->
-
     </div>
     </div>
 
@@ -204,11 +215,13 @@
   <script src="../assets/vendor/purecounter/purecounter.js"></script>
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.6.1/tabletop.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script>
   <script src="..\assets\js\events-import.js"></script>
 
 </body>
