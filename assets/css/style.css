@@ -2407,7 +2407,6 @@ section {
   text-align: center;
   padding-top: 30px;
   color: #012970;
-  display: none;
 }
 
 .footer .credits {
@@ -2415,5 +2414,4 @@ section {
   text-align: center;
   font-size: 13px;
   color: #012970;
-  display: none;
 }
