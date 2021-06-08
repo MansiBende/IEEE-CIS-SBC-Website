@@ -72,9 +72,9 @@
         <ol>
           <li><a href="../../">Home</a></li>
           <li><a href="../../blog/">Blog</a></li>
-          <li>Tkinter - Layout Managers</li>
+          <li>Java Application</li>
         </ol>
-        <h2>Tkinter - Layout Managers</h2>
+        <h2>Java Application</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -90,177 +90,238 @@
             <article class="entry entry-single">
 
               <div class="entry-img">
-                <img src="../../assets/img/blog/Tkinter.jpg" alt="" class="img-fluid">
+                <img src="../../assets/img/blog/Java.png" alt="" class="img-fluid" style="width:900px;height:400px;">
               </div>
 
               <h2 class="entry-title">
-                <a href="#">Tkinter - Layout Managers</a>
+                <a href="#">Java Application</a>
               </h2>
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Om Jaiswal</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2021-02-01">Feb 1, 2021</time></a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">8 Comments</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Mansi Bende</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2021-03-05">Mar 5, 2021</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">6 Comments</a></li>
                 </ul>
               </div>
 
               <div class="entry-content">
                 <p style="text-align: justify;">
-                  GUI (Graphical User Interface) is the common User Interface which is a visual representation of communication for the easy interaction between the machine and user. 
-                  It includes buttons and icons for Graphical representation, and rather than the usual text-based or command-based communication it can be performed by interacting with these icons. 
-                  Each and every GUI has its own features and functions.
+                  Java is one of the popular high-level programming languages, created in 1995 by Sun Microsystems. 
+                  Java can be used to develop mobile apps, web apps, games and much more. 
+                  Java is more commonly used in our day to day life on popular platforms like LinkedIn, Google, etc.
                 </p>
 
                 <p style="text-align: justify;">
-                  Even without any prior computer knowledge one can perform the basic functions of a computer. 
-                  Surprisingly, even for such a simple task GUI is responsible. 
-                  GUI provides a visual representation of files present and provides details about it which makes searching very easy. 
-                  Every response from the computer is visually communicated through GUI.
+                  Being platform independent and with multiplatform support, Java can be used on multiple softwares like NetBeans, Eclipse, Xcode 6, etc. 
+                  We often use Java to create real-time applications like Hospital Management System, Employee Management System, Data Visualization Software, Products Management System, etc.  
                 </p>
 
                 <p style="text-align: justify;">
-                  When designing the GUI of an application, it is important to decide what type of widgets are going to be used and how to organize those widgets in the application by using the specialized non-visible objects called layout managers in the Tkinter module.
-                </p>
-
-                <p style="text-align: justify;">
-                  Tkinter has three built-in layout managers:
+                  Let’s see the Product Management System that I have designed which helps companies to manage their products. 
+                  We will need different interfaces to create a whole application like Welcome Page, Login Page, Create Account Page, Home Page, Insert Page, Main Page and many more. 
                 </p>
                 
-                <h3><strong>Pack:</strong></h3>
+                <h3><strong>Database</strong></h3>
+ 		            <p style="text-align: justify;">
+                  All the information about the products and users are saved in the database in their respective tables. 
+                  These databases are further accessible by the interfaces to maintain, insert, update, search or delete a record.
+                </p>
+                <p><strong>Product Table</strong></p>
                 <p style="text-align: justify;">
-                  The pack geometry manager organizes widgets in horizontal and vertical boxes.
+		                <img src="../../assets/img/blog/DB1.PNG" class="img-fluid" alt="">
+		            </p>
+                <p><strong>Account Table</strong></p>		
+		            <p>
+		                <img src="../../assets/img/blog/DB2.PNG" class="img-fluid" alt="">
+                </p>
+                <p style="text-align: justify;">
+                  We can perform different operations on these tables. 
+                  For these we need to design different interfaces by choosing swing controls, swing containers, etc from the palette. 
+                  After designing your pages we move forward to the coding part to allow the interfaces to carry out their particular tasks.
+                </p>
+                <p style="text-align: justify;">
+                  The home page displays the menu for the available pages on my application. One can also use the shortcut keys to move to a particular page.
+                </p>
+                <p>
+                  <img src="../../assets/img/blog/home.PNG" class="img-fluid center" alt="" style="width:450px;height:300px;">
+                </p>
+                <p style="text-align: justify;">
+                  Using the insert page we can insert the information of new products. We just need to fill the information in the text field.
+                </p>
+                <p>
+                  <img src="../../assets/img/blog/fill.PNG" class="img-fluid center" alt="" style="width:450px;height:350px;">
+                </p>
+                <p style="text-align: justify;">
+                  The search page is used to search for a particular product in the database. 
+                  We can search a particular product using product id, price or quantity. 
+                  We can also use more than one search option at a time.
+                </p>
+                <p>
+                  <img src="../../assets/img/blog/search.PNG" class="img-fluid center" alt="" style="width:300px;height:400px;">
+                </p>
+                <p style="text-align: justify;">
+                  The Main Page is used for various operations including showing all records, removing a record, updating a record, clearing the text field and returning to the Home Page.
+                </p>
+                <p>
+                  <img src="../../assets/img/blog/1.PNG" class="img-fluid center" alt="" style="width:450px;height:300px;">
+                </p>
+                <p style="text-align: justify;">
+                  By clicking on Show Records, all the records in the product table in the database will be displayed.
+                </p>
+                <p>
+                  <img src="../../assets/img/blog/2.PNG" class="img-fluid center" alt="" style="width:450px;height:300px;">
+                </p>
+                <p style="text-align: justify;">
+                  We can remove a record from the database by simply clicking on the specific record you wish to delete from the database and then by clicking on the remove button. 
+                  When you click on any of the displayed records the information gets automatically filled in the text field. 
+                  Here the record of product Brush is being deleted.
+                </p>
+                <p>
+                  <img src="../../assets/img/blog/5.PNG" class="img-fluid center" alt="" style="width:450px;height:300px;">
+                  <img src="../../assets/img/blog/6.PNG" class="img-fluid center" alt="" style="width:450px;height:300px;">
+                </p>
+                <p style="text-align: justify;">
+                  For updating a record simply click on the specific record, the information will be automatically filled in the text field. 
+                  One just needs to make the required changes in the text field and click the update button. 
+                  Here the information of product Stapler has been updated.
+                </p>
+                <p>
+                  <img src="../../assets/img/blog/2.PNG" class="img-fluid center" alt="" style="width:450px;height:300px;">
+                  <img src="../../assets/img/blog/4.PNG" class="img-fluid center" alt="" style="width:450px;height:300px;">
+                </p>
+                <p style="text-align: justify;">
+                  The clear button helps to clear the text field and the home button directs us back to the home page.
                 </p>
 
-                <blockquote>
-                  <pre style="text-align: left;">
+
+		<h3><strong>Welcome Page</strong></h3>
+ 		<p style="text-align: justify;">
+      Welcome Screen provides you the option to either Login or Sign in if you are a new user. Here is the main logic behind the code: 
+    </p>
+<blockquote>
+<pre style="text-align: left;">
 <strong>Code:</strong>
 
-  # importing Tkinter module
-  from tkinter import *
-  
-  # creating window object
-  window = Tk()
+   private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) 
+   {
+      setVisible(false);
+      new SigninPage();
+    }
 
-  window.title("My First GUI Program")   # window title
-  window.minsize(width=300, height=300)  # window size
-
-  # creating Entry
-  my_label = Label(text="I am a label", font=("Arial", 24, "bold"))
-  my_label.pack()
-
-  # creating Entry
-  input = Entry(width=30)
-  input.pack()
-
-  # creating Button
-  button = Button(text="Click Me")
-  button.pack()
-
-  window.mainloop()  
+   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) 
+   {
+      setVisible(false);
+      new LoginPage();
+    }
+ 
   
   <strong>Output:</strong>
                   </pre>
 
-                  <img src="../../assets/img/blog/Label.PNG" class="center" alt="" style="height: 250px; width: 250px;">
+                  <img src="../../assets/img/blog/welcome.png" class="img-fluid" alt="" style="width:400px;height:400px;">
 
                 </blockquote>
 
-                <h3><strong>Place:</strong></h3>
+                <h3><strong>Login Page</strong></h3>
                 <p style="text-align: justify;">
-                  The place geometry manager positions widgets using absolute positioning.
+                  The login page gives you access to the application if you enter the correct username and password or else it gives you the message stating the error.
+                  Here is the main logic behind the code:
                 </p>
 
                 <blockquote>
                   <pre style="text-align: left;">
 <strong>Code:</strong>
 
-  # importing Tkinter module
-  from tkinter import *
+   private void LoginActionPerformed(java.awt.event.ActionEvent evt) 
+   {
+      String user = username.getText(); 
+      String password = pass.getText(); 
 
-  # creating window object
-  window = Tk()
+      if(user.trim().equals("admin")&&(password.trim().equals("12345"))) 
+      {
+         JOptionPane.showMessageDialog(null,"Valid User"); 
+         setVisible(false); 
+         new HomePage(); 
+       } 
+          
+      else{ 
+         JOptionPane.showMessageDialog(null,"Invalid User"); 
+       } 
+   } 
 
-  window.title("My First GUI Program")   # window title
-  window.minsize(width=300, height=300)  # window size
+   private void exitActionPerformed(java.awt.event.ActionEvent evt)
+   { 
+     System.exit(0); 
+   } 
 
-  # creating Label
-  my_label = Label(text="I am a label", font=("Arial", 24, "bold"))
-  my_label.place(x=0, y=0)               # position of Label
 
-  # creating Entry
-  input = Entry(width=30)
-  input.place(x=100, y=100)              # position of Entry
-
-  # creating Button
-  button = Button(text="Click Me")
-  button.place(x=200, y=200)             # position of Button
-
-  window.mainloop()
   
   <strong>Output:</strong>
                   </pre>
 
-                  <img src="../../assets/img/blog/Label2.PNG" class="center" alt="" style="height: 250px; width: 250px;">
+                        <img src="../../assets/img/blog/login.png" class="img-fluid" alt="" style="width:450px;height:300px;">
+                        <p>&nbsp;</p>
+                        <img src="../../assets/img/blog/msg3.PNG" class="img-fluid" alt="" style="width:350px;height:200px;">
+                        <p>&nbsp;</p>
+                        <img src="../../assets/img/blog/msg1.PNG" class="img-fluid" alt="" style="width:350px;height:200px;">
 
                 </blockquote>
                 
-                <h3><strong>Grid:</strong></h3>
+                <h3><strong>Sign- In Page:</strong></h3>
                 <p style="text-align: justify;">
-                  The grid geometry manager places widgets in a two dimensional grid.
+                  A new user can create an account by filling in details in the sign-in page. In this if the confirm password and password is matched it successfully creates an account or else throws an error. 
+                  The records will be further stored in the database we created.
+                  Here is the main logic behind the code:
                 </p>
 
                 <blockquote>
                   <pre style="text-align: left;">
 <strong>Code:</strong>
 
-  # importing Tkinter module
-  from tkinter import *
+   String fname1 = fname.getText(); 
+   String lname1 = lname.getText(); 
+   String email1 = email.getText(); 
+   String pass1 = pass.getText(); 
+   String conpass = cpass.getText(); 
 
-  # creating window object
-  window = Tk()
+   if((conpass.trim().equals(pass1))) 
+   {
+     JOptionPane.showMessageDialog(null,"Account Created Successfully"); 
+     setVisible(false); new HomePage();
+   }
+ 
+   else { 
+     JOptionPane.showMessageDialog(null,"Invalid Password"); 
+   }
 
-  window.title("My First GUI Program")   # window title
-  window.minsize(width=300, height=300)  # window size
-
-  # creating Label
-  my_label = Label(text="I am a label", font=("Arial", 24, "bold"))
-  my_label.grid(column=0, row=0)         # position of Label
-
-  # creating Entry
-  input = Entry(width=30)
-  input.grid(column=1, row=1)            # position of Entry
-
-  # creating Button
-  button = Button(text="Click Me")
-  button.grid(column=1, row=2)           # position of Button
-
-  window.mainloop()
   
   <strong>Output:</strong>
                   </pre>
 
-                  <img src="../../assets/img/blog/Label3.PNG" class="center" alt="" style="height: 250px; width: 250px;">
+                  <img src="../../assets/img/blog/signin.png" class="img-fluid" alt="" style="width:450px;height:300px;">
+                  <p>&nbsp;</p>
+                  <img src="../../assets/img/blog/msg2.PNG" class="img-fluid" alt="" style="width:350px;height:200px;">
 
                 </blockquote>
-
-                <p style="text-align: justify;">
-                  Among all these built-in layout managers, I prefer the Grid because it makes designing and collaborating the design with other designers easier as they provide a plan for where to place elements.
-                </p>
 
                 <img src="../../assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
 
               </div>
+              
+              <p style="text-align: justify;">
+                If you wish to see the whole code for the Product Management System, visit my <a href=#>github repository</a>.
+              </p>
 
             </article><!-- End blog entry -->
 
             <div class="blog-author d-flex align-items-center">
-              <img src="../../assets/img/blog/Om.png" class="rounded-circle float-left" alt="">
+              <img src="../../assets/img/blog/Mansi.png" class="rounded-circle float-left" alt="">
               <div>
-                <h4>Om Jaiswal</h4>
+                <h4>Mansi Bende</h4>
                 <div class="social-links">
-                  <a href="https://www.linkedin.com/in/om-jaiswal-a599b61b3"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://www.instagram.com/om_jaiswal7/"><i class="biu bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/mansi-bende-9738311b2/"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.instagram.com/__mansi__531/"><i class="biu bi-instagram"></i></a>
                 </div>
                 <p>
                   Executive Committee Member at IEEE CIS SBC - GHRCE(62361B)
@@ -270,28 +331,28 @@
 
             <div class="blog-comments">
 
-              <h4 class="comments-count">8 Comments</h4>
+              <h4 class="comments-count">6 Comments</h4>
 
               <div id="comment-1" class="comment">
                 <div class="d-flex">
                   <div class="comment-img"><img src="../../assets/img/blog/User.png" alt=""></div>
                   <div>
-                    <h5><a href="">Sajid Hussain</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
-                    <time datetime="2021-02-02">02 Feb, 2021</time>
+                    <h5><a href="">Khushi Sonkusre</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <time datetime="2021-03-05">5 Mar, 2021</time>
                     <p>
-                      Simple, clean and elegant with a proper and sound introduction.
+                      Amazing write-up! Keep up the good work.
                     </p>
                   </div>
                 </div>
 
                 <div id="comment-reply-1" class="comment comment-reply">
                   <div class="d-flex">
-                    <div class="comment-img"><img src="../../assets/img/blog/Om.png" alt=""></div>
+                    <div class="comment-img"><img src="../../assets/img/blog/Mansi.png" alt=""></div>
                     <div>
-                      <h5><a href="">Om Jaiswal</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
-                      <time datetime="2020-02-02">02 Feb, 2021</time>
+                      <h5><a href="">Mansi Bende</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                      <time datetime="2021-03-05">5 Mar, 2021</time>
                       <p>
-                        Thank you, it is really great to hear that.
+                        Thank you!
                       </p>
                     </div>
                   </div>
@@ -304,22 +365,22 @@
                 <div class="d-flex">
                   <div class="comment-img"><img src="../../assets/img/blog/User.png" alt=""></div>
                   <div>
-                    <h5><a href="">Shantanu Lokhande</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
-                    <time datetime="2021-02-02">02 Feb, 2021</time>
+                    <h5><a href="">Pragati Wagh</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <time datetime="2021-03-05">5 Mar, 2021</time>
                     <p>
-                      Written with proper formatting and ample examples. Loved it!
+                      Thank you so much for sharing all this wonderful project!
                     </p>
                   </div>
                 </div>
 
                 <div id="comment-reply-1" class="comment comment-reply">
                   <div class="d-flex">
-                    <div class="comment-img"><img src="../../assets/img/blog/Om.png" alt=""></div>
+                    <div class="comment-img"><img src="../../assets/img/blog/Mansi.png" alt=""></div>
                     <div>
-                      <h5><a href="">Om Jaiswal</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
-                      <time datetime="2020-02-02">02 Feb, 2021</time>
+                      <h5><a href="">Mansi Bende</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                      <time datetime="2021-03-05">5 Mar, 2021</time>
                       <p>
-                        Thank you, for your kind words.
+                        Thank you that was really of sweet you.
                       </p>
                     </div>
                   </div>
@@ -332,54 +393,25 @@
                 <div class="d-flex">
                   <div class="comment-img"><img src="../../assets/img/blog/User.png" alt=""></div>
                   <div>
-                    <h5><a href="">Parag Asare</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
-                    <time datetime="2021-02-03">03 Feb, 2021</time>
+                    <h5><a href="">Dhanashree Borgaonkar</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <time datetime="2021-03-06">6 Mar, 2021</time>
                     <p>
-                      Content could have been better and more that it is, but still great work.
+                      More information about the project could have been shared, yet it is a good work.
                     </p>
                   </div>
                 </div>
 
                 <div id="comment-reply-1" class="comment comment-reply">
                   <div class="d-flex">
-                    <div class="comment-img"><img src="../../assets/img/blog/Om.png" alt=""></div>
+                    <div class="comment-img"><img src="../../assets/img/blog/Mansi.png" alt=""></div>
                     <div>
-                      <h5><a href="">Om Jaiswal</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
-                      <time datetime="2020-02-03">03 Feb, 2021</time>
+                      <h5><a href="">Mansi Bende</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                      <time datetime="2021-03-06">6 Mar, 2021</time>
                       <p>
-                        I value and respect your opinion, thank you for sharing and I will work on it.
+                        Thanks for sharing your feedback, will surely try to improve my work.
                       </p>
                     </div>
                   </div>
-
-                </div><!-- End comment reply #1-->
-
-              </div>
-
-              <div id="comment-3" class="comment">
-                <div class="d-flex">
-                  <div class="comment-img"><img src="../../assets/img/blog/User.png" alt=""></div>
-                  <div>
-                    <h5><a href="">Rishank Tambe</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
-                    <time datetime="2021-02-04">04 Feb, 2021</time>
-                    <p>
-                      I was looking to read something about this for a long time. Thank you !
-                    </p>
-                  </div>
-                </div>
-
-                <div id="comment-reply-1" class="comment comment-reply">
-                  <div class="d-flex">
-                    <div class="comment-img"><img src="../../assets/img/blog/Om.png" alt=""></div>
-                    <div>
-                      <h5><a href="">Om Jaiswal</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
-                      <time datetime="2020-02-04">04 Feb, 2021</time>
-                      <p>
-                        Thank you, I am happy to hear you feel that way!
-                      </p>
-                    </div>
-                  </div>
-
                 </div><!-- End comment reply #1-->
 
               </div><!-- End comment #3 -->
@@ -417,7 +449,7 @@
           </div><!-- End blog entries list -->
 
           <div class="col-lg-4">
-    
+
             <div class="sidebar">
 
               <h3 class="sidebar-title">Search</h3>
@@ -428,7 +460,7 @@
                 </form>
               </div><!-- End sidebar search formn-->
 
-              <h3 class="sidebar-title">Categories</h3>
+              <h3 class="sidebar-title">Category</h3>
               <div class="sidebar-item categories">
                 <ul>
                   <li><a href="#">Technology<span>(2)</span></a></li>
@@ -436,20 +468,20 @@
               </div><!-- End sidebar categories-->
 
               <h3 class="sidebar-title">Recent Blogs</h3>
-              <div class="sidebar-item recent-posts">
-                <div class="post-item clearfix">
-                  <img src="../../assets/img/blog/Tkinter.jpg" alt="">
-                  <h4><a href=#>Tkinter - Layout Managers</a></h4>
-                  <time datetime="2021-02-01">Feb 1, 2021</time>
-                </div>
-
-                <div class="post-item clearfix">
-                  <img src="../../assets/img/blog/Java.png" alt="">
-                  <h4><a href="../Java Application/index.html">Java Application</a></h4>
-                  <time datetime="2021-03-05">Mar 5, 2021</time>
-                </div>
-
-              </div><!-- End sidebar recent posts-->
+                <div class="sidebar-item recent-posts">
+                  <div class="post-item clearfix">
+                    <img src="../../assets/img/blog/Tkinter.jpg" alt="">
+                    <h4><a href="../Tkinter-Layout_Manager/">Tkinter - Layout Managers</a></h4>
+                    <time datetime="2021-02-01">Feb 1, 2021</time>
+                  </div>
+    
+                  <div class="post-item clearfix">
+                    <img src="../../assets/img/blog/Java.png" alt="">
+                    <h4><a href=#>Java Application</a></h4>
+                    <time datetime="2021-03-05">Mar 5, 2021</time>
+                  </div>
+    
+                </div><!-- End sidebar recent posts-->
 
               <h3 class="sidebar-title">Tags</h3>
               <div class="sidebar-item tags">
