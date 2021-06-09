@@ -248,7 +248,7 @@
                   Among all these built-in layout managers, I prefer the Grid because it makes designing and collaborating the design with other designers easier as they provide a plan for where to place elements.
                 </p>
 
-                <img src="../../assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
+                
 
               </div>
 
@@ -485,10 +485,13 @@
             <p>Email address<emp style="color:red;">*</emp></p>
           </div>
           <div class="col-lg-6">
-            <form action="https://submit-form.com/1K6gjRqM" method="post">
+            <form action="https://submit-form.com/1K6gjRqM">
               <input type="email" name="email" required>
-              <input type="submit" value="Subscribe">
+                <input type="hidden" name="_redirect" value="https://ieee-cis-sbc.org/blog/Tkinter-Layout_Manager/?success" />
+                <input type="hidden" name="_append" value="false" />
+              <input type="submit" value="Subscribe" />
             </form>
+            <div id="newsletter-success" class="newsletter-success">You have been successfully subscribed to our newsletter</div>
           </div>
         </div>
       </div>
@@ -568,6 +571,8 @@
   <!-- Template Main JS File -->
   <script src="../../assets/js/main.js"></script>
   <script src="../../assets/js/contact.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="../../assets/js/newsletter-form.js"></script>
 
 </body>
 

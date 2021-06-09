@@ -137,10 +137,13 @@
             <p>Email address<emp style="color:red;">*</emp></p>
           </div>
           <div class="col-lg-6">
-            <form action="https://submit-form.com/1K6gjRqM" method="post">
+            <form action="https://submit-form.com/1K6gjRqM">
               <input type="email" name="email" required>
-              <input type="submit" value="Subscribe">
+                <input type="hidden" name="_redirect" value="https://ieee-cis-sbc.org/events/?success" />
+                <input type="hidden" name="_append" value="false" />
+              <input type="submit" value="Subscribe" />
             </form>
+            <div id="newsletter-success" class="newsletter-success">You have been successfully subscribed to our newsletter</div>
           </div>
         </div>
       </div>
@@ -212,7 +215,6 @@
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
   <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/purecounter/purecounter.js"></script>
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
@@ -225,6 +227,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.6.1/tabletop.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script>
   <script src="..\assets\js\events-import.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="../assets/js/newsletter-form.js"></script>
 
 </body>
 

@@ -305,8 +305,6 @@
 
                 </blockquote>
 
-                <img src="../../assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
-
               </div>
               
               <p style="text-align: justify;">
@@ -517,10 +515,13 @@
             <p>Email address<emp style="color:red;">*</emp></p>
           </div>
           <div class="col-lg-6">
-            <form action="https://submit-form.com/1K6gjRqM" method="post">
+            <form action="https://submit-form.com/1K6gjRqM">
               <input type="email" name="email" required>
-              <input type="submit" value="Subscribe">
+                <input type="hidden" name="_redirect" value="https://ieee-cis-sbc.org/blog/Java_Application/?success" />
+                <input type="hidden" name="_append" value="false" />
+              <input type="submit" value="Subscribe" />
             </form>
+            <div id="newsletter-success" class="newsletter-success">You have been successfully subscribed to our newsletter</div>
           </div>
         </div>
       </div>
@@ -596,10 +597,12 @@
   <script src="../../assets/vendor/purecounter/purecounter.js"></script>
   <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../../assets/js/main.js"></script>
   <script src="../../assets/js/contact.js"></script>
+  <script src="../../assets/js/newsletter-form.js"></script>
 
 </body>
 

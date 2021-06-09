@@ -1652,6 +1652,17 @@ section {
   font-weight: 600;
 }
 
+.newsletter-success{
+  margin-top: 20px;
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
 .contact .php-email-form .success{
   display: block;
 }
