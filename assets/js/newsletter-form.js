@@ -1,4 +1,4 @@
-function init(){
+function check(){
     var params = new URLSearchParams(window.location.search); 
   
     if (params==''){
@@ -14,6 +14,6 @@ function init(){
   }
   
   window.onload = function() {
-    init();
+    check();
   }
   

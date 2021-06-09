@@ -1,5 +1,22 @@
+function check(){
+  var params = new URLSearchParams(window.location.search); 
+
+  if (params==''){
+      //Do nothing
+  }else{
+      if(params.has('success')){
+          document.getElementById('newsletter-success').style.display='block';
+          $('html, body').animate({
+            'scrollTop' : $("#footer").position().top-200
+        });
+      }
+  }
+}
+
+
 window.onload = function() {
-    init()
+    init();
+    check();
   };
 
  var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1SpYfel3GzCs22EL8Ly0z-pz33Gt3u-p-3oRmr0JybYk/edit?usp=sharing';
