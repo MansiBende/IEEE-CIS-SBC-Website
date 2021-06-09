@@ -9,39 +9,73 @@
 
 <url>
   <loc>https://ieee-cis-sbc.org/</loc>
-  <lastmod>2021-05-22T04:32:40+00:00</lastmod>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://ieee-cis-sbc.org/events/</loc>
-  <lastmod>2021-05-22T04:32:40+00:00</lastmod>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ieee-cis-sbc.org/about/</loc>
-  <lastmod>2021-05-22T04:32:40+00:00</lastmod>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ieee-cis-sbc.org/team/</loc>
-  <lastmod>2021-05-22T04:32:40+00:00</lastmod>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ieee-cis-sbc.org/research/</loc>
-  <lastmod>2021-05-22T04:32:40+00:00</lastmod>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ieee-cis-sbc.org/blog/</loc>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ieee-cis-sbc.org/contact/</loc>
-  <lastmod>2021-05-22T04:32:40+00:00</lastmod>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ieee-cis-sbc.org/join/</loc>
-  <lastmod>2021-05-22T04:32:40+00:00</lastmod>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://ieee-cis-sbc.org/blog/Tkinter-Layout_Manager/</loc>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ieee-cis-sbc.org/blog/Java_Application/</loc>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shehacks.ieee-cis-sbc.org/</loc>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shecodes.ieee-cis-sbc.org/</loc>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://techconvocation.ieee-cis-sbc.org/</loc>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://surf.ieee-cis-sbc.org/</loc>
+  <lastmod>2021-06-08T21:07:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
