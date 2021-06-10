@@ -203,17 +203,15 @@
 <pre style="text-align: left;">
 <strong>Code:</strong>
 
-   private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) 
-   {
-      setVisible(false);
-      new SigninPage();
-    }
+  private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+     setVisible(false);
+     new Login().setVisible(true);
+  }                                        
 
-   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) 
-   {
-      setVisible(false);
-      new LoginPage();
-    }
+  private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+     setVisible(false);
+     new CreateAccount().setVisible(true);
+  }   
  
   
   <strong>Output:</strong>
@@ -233,28 +231,27 @@
                   <pre style="text-align: left;">
 <strong>Code:</strong>
 
-   private void LoginActionPerformed(java.awt.event.ActionEvent evt) 
-   {
-      String user = username.getText(); 
-      String password = pass.getText(); 
+  private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+     String user = textField2.getText();
+     String password = jPasswordField1.getText();
+     if(user.trim().equals("admin")&&(password.trim().equals("12345"))) {
+        JOptionPane.showMessageDialog(null,"Valid User");
+        setVisible(false);
+        new Home().setVisible(true);
+     }
+     else if(user.trim().equals("user")&&(password.trim().equals("12345"))) {
+        JOptionPane.showMessageDialog(null,"Valid User");
+        setVisible(false);
+        new Home().setVisible(true);
+     }
+     else {
+        JOptionPane.showMessageDialog(null,"Invalid User");
+     }        
+  }                                        
 
-      if(user.trim().equals("admin")&&(password.trim().equals("12345"))) 
-      {
-         JOptionPane.showMessageDialog(null,"Valid User"); 
-         setVisible(false); 
-         new HomePage(); 
-       } 
-          
-      else{ 
-         JOptionPane.showMessageDialog(null,"Invalid User"); 
-       } 
-   } 
-
-   private void exitActionPerformed(java.awt.event.ActionEvent evt)
-   { 
-     System.exit(0); 
-   } 
-
+  private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+     System.exit(0);
+  }  
 
   
   <strong>Output:</strong>
@@ -279,21 +276,45 @@
                   <pre style="text-align: left;">
 <strong>Code:</strong>
 
-   String fname1 = fname.getText(); 
-   String lname1 = lname.getText(); 
-   String email1 = email.getText(); 
-   String pass1 = pass.getText(); 
-   String conpass = cpass.getText(); 
+  private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    try{
+       String fname1 = textField1.getText();
+       String lname1 = textField5.getText();
+       String email1 = textField2.getText();
+       String pass1 = textField6.getText();
+       String conpass = textField4.getText();
+        
+       if((conpass.trim().equals(pass1))) {
+          JOptionPane.showMessageDialog(null,"Account Created Successfully");
+          setVisible(false);
+       }
+       else {
+          JOptionPane.showMessageDialog(null,"Invalid Password");
+       }
+       pst.setString(1,fname1);
+       pst.setString(2,lname1);
+       pst.setString(3,email1);
+       pst.setString(4,pass1);
+       pst.setString(5,conpass);
+       int res=pst.executeUpdate();
+       if(res>=1) {
+          JOptionPane.showMessageDialog(null,"Data Inserted Successfully");
+          setVisible(false);
+          Home h=new Home();
+          h.setVisible(true);
+       }
+       else {
+          JOptionPane.showMessageDialog(null,"Error Occurred");
+       }
+    }
+    catch (Exception e) {
+       JOptionPane.showMessageDialog(null,e.getMessage());
+    }
+  }                                        
 
-   if((conpass.trim().equals(pass1))) 
-   {
-     JOptionPane.showMessageDialog(null,"Account Created Successfully"); 
-     setVisible(false); new HomePage();
-   }
- 
-   else { 
-     JOptionPane.showMessageDialog(null,"Invalid Password"); 
-   }
+  private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    System.exit(0);
+  }  
 
   
   <strong>Output:</strong>
@@ -308,7 +329,7 @@
               </div>
               
               <p style="text-align: justify;">
-                If you wish to see the whole code for the Product Management System, visit my <a href=#>github repository</a>.
+                If you wish to see the whole code for the Product Management System, visit my <a href="https://github.com/MansiBende/Java-Applications">github repository</a>.
               </p>
 
             </article><!-- End blog entry -->
