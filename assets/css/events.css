@@ -10,7 +10,7 @@
     flex-wrap:wrap;
     justify-content:space-evenly;
     min-height: 100vh;
-    display: none;
+   
 }
 
 .event-card{
@@ -209,7 +209,6 @@
     background: white;
     border-radius: 50px;
     padding: 2px 15px;
-    display: none;
     overflow: hidden;
   }
   
